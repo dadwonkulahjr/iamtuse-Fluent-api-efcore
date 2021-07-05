@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "iamtuseFluentApi.Application/1.0.0": {
+        "dependencies": {
+          "iamtuseFluentApi.Domain": "1.0.0"
+        },
         "runtime": {
           "iamtuseFluentApi.Application.dll": {}
+        }
+      },
+      "iamtuseFluentApi.Domain/1.0.0": {
+        "runtime": {
+          "iamtuseFluentApi.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "iamtuseFluentApi.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "iamtuseFluentApi.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

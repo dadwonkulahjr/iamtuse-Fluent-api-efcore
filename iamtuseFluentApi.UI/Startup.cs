@@ -1,8 +1,7 @@
-using iamtuseFluentApi.Persistence.Infrastructure;
+using iamtuseFluentApi.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -21,13 +20,20 @@ namespace iamtuseFluentApi.UI
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDatabaseDeveloperPageExceptionFilter();
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddInfrastructureServices(Configuration);
             services.AddRazorPages();
+            services.Configure<RouteOptions>(options =>
+            {
+                options.AppendTrailingSlash = true;
+                options.LowercaseQueryStrings = true;
+                options.LowercaseUrls = true;
+            });
+            services.AddControllersWithViews();
+            services.AddOpenApiDocument(options =>
+            {
+                options.Title = "iamtuseFluentApi Test!";
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -46,6 +52,11 @@ namespace iamtuseFluentApi.UI
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
+
+
             app.UseRouting();
 
             app.UseAuthentication();
@@ -54,6 +65,7 @@ namespace iamtuseFluentApi.UI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }

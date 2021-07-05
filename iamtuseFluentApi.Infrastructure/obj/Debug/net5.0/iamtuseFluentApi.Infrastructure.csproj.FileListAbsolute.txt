@@ -10,3 +10,6 @@ C:\Users\Dad S. Wonkulah Jr\source\repos\iamtuseFluentApi\iamtuseFluentApi.Infra
 C:\Users\Dad S. Wonkulah Jr\source\repos\iamtuseFluentApi\iamtuseFluentApi.Infrastructure\obj\Debug\net5.0\iamtuseFluentApi.Infrastructure.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\iamtuseFluentApi\iamtuseFluentApi.Infrastructure\obj\Debug\net5.0\ref\iamtuseFluentApi.Infrastructure.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\iamtuseFluentApi\iamtuseFluentApi.Infrastructure\obj\Debug\net5.0\iamtuseFluentApi.Infrastructure.pdb
+C:\Users\Dad S. Wonkulah Jr\source\repos\iamtuseFluentApi\iamtuseFluentApi.Infrastructure\bin\Debug\net5.0\iamtuseFluentApi.Domain.dll
+C:\Users\Dad S. Wonkulah Jr\source\repos\iamtuseFluentApi\iamtuseFluentApi.Infrastructure\bin\Debug\net5.0\iamtuseFluentApi.Domain.pdb
+C:\Users\Dad S. Wonkulah Jr\source\repos\iamtuseFluentApi\iamtuseFluentApi.Infrastructure\obj\Debug\net5.0\iamtuseFluentApi.Infrastructure.csproj.CopyComplete

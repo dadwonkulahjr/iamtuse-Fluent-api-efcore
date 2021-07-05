@@ -1,0 +1,118 @@
+﻿@page
+@model iamtuseFluentApi.UI.Pages.Admin.Employee.UpsertModel
+@{
+    if (Model.EmployeeVM.Employee.EmployeeId == 0)
+    {
+        ViewData["Title"] = "Create new employee";
+    }
+    else
+    {
+        ViewData["Title"] = "Update existing employee";
+    }
+
+}
+<form method="post" enctype="multipart/form-data">
+    <div class="container">
+
+        @if (Model.EmployeeVM.Employee.EmployeeId != 0)
+        {
+            <input type="hidden" asp-for="@Model.EmployeeVM.Employee.EmployeeId" />
+            <input type="hidden" asp-for="@Model.EmployeeVM.Employee.Gender.Name" />
+        }
+        <div class="row px-2 mx-2 backgroundWhite border mt-2">
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+            <div class="col-12 px-3" style="border-bottom:1px solid #325d88">
+                <h2 class="text-primary">@(Model.EmployeeVM.Employee.EmployeeId == 0 ? "Create new employee": "Update existing employee")</h2>
+            </div>
+
+            <div class="col-8 pt-3">
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label asp-for="@Model.EmployeeVM.Employee.FirstName"></label>
+                    </div>
+                    <div class="col-9">
+                        <input asp-for="@Model.EmployeeVM.Employee.FirstName" class="form-control" placeholder="First name..." />
+                        <span asp-validation-for="@Model.EmployeeVM.Employee.FirstName" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label asp-for="@Model.EmployeeVM.Employee.LastName"></label>
+                    </div>
+                    <div class="col-9">
+                        <input asp-for="@Model.EmployeeVM.Employee.LastName" class="form-control" placeholder="Last name..." />
+                        <span asp-validation-for="@Model.EmployeeVM.Employee.LastName" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label asp-for="@Model.EmployeeVM.Employee.Email"></label>
+                    </div>
+                    <div class="col-9">
+                        <input asp-for="@Model.EmployeeVM.Employee.Email" class="form-control" placeholder="Email..." />
+                        <span asp-validation-for="@Model.EmployeeVM.Employee.Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label asp-for="@Model.EmployeeVM.Employee.GenderId"></label>
+                    </div>
+                    <div class="col-9">
+                        @Html.DropDownListFor(m => m.EmployeeVM.Employee.GenderId,
+                            Model.EmployeeVM.GetDropdownListForGender,
+                            "-Please select a Gender-",
+                            new { @class = "form-control" })
+                        <span asp-validation-for="@Model.EmployeeVM.Employee.GenderId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label asp-for="@Model.EmployeeVM.Employee.Salary"></label>
+                    </div>
+                    <div class="col-9">
+                        <input asp-for="@Model.EmployeeVM.Employee.Salary" class="form-control" placeholder="Salary..." />
+                        <span asp-validation-for="@Model.EmployeeVM.Employee.Salary" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-9 offset-3">
+                        <div class="row">
+                            <div class="col-6">
+                                @if (Model.EmployeeVM.Employee.EmployeeId != 0)
+                                {
+                                    <button type="submit" class="btn btn-primary form-control">
+                                        <i class="far fa-edit"></i>&nbsp; Update
+                                    </button>
+                                }
+                                else
+                                {
+                                    <button type="submit" class="btn btn-primary form-control">
+                                        <i class="fas fa-plus">&nbsp; Add</i>
+                                    </button>
+                                }
+
+                            </div>
+                            <div class="col-6">
+                                <a asp-page="./Index" class="btn btn-success form-control">
+                                    <i class="fas fa-arrow-circle-left"></i>&nbsp; Back To List
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</form>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+
+} 

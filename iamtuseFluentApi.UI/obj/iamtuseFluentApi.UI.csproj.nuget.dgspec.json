@@ -4,14 +4,75 @@
     "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.UI\\iamtuseFluentApi.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Infrastructure\\iamtuseFluentApi.Infrastructure.csproj": {
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Application\\iamtuseFluentApi.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Infrastructure\\iamtuseFluentApi.Infrastructure.csproj",
-        "projectName": "iamtuseFluentApi.Infrastructure",
-        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Infrastructure\\iamtuseFluentApi.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Application\\iamtuseFluentApi.Application.csproj",
+        "projectName": "iamtuseFluentApi.Application",
+        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Application\\iamtuseFluentApi.Application.csproj",
         "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Domain\\iamtuseFluentApi.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Domain\\iamtuseFluentApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Domain\\iamtuseFluentApi.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Domain\\iamtuseFluentApi.Domain.csproj",
+        "projectName": "iamtuseFluentApi.Domain",
+        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Domain\\iamtuseFluentApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,8 +100,70 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Infrastructure\\iamtuseFluentApi.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Infrastructure\\iamtuseFluentApi.Infrastructure.csproj",
+        "projectName": "iamtuseFluentApi.Infrastructure",
+        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Infrastructure\\iamtuseFluentApi.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Domain\\iamtuseFluentApi.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Domain\\iamtuseFluentApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.7, )"
             }
@@ -56,6 +179,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -88,6 +214,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Application\\iamtuseFluentApi.Application.csproj": {
+                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Application\\iamtuseFluentApi.Application.csproj"
+              },
               "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Infrastructure\\iamtuseFluentApi.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Infrastructure\\iamtuseFluentApi.Infrastructure.csproj"
               }
@@ -127,6 +256,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[5.0.7, )"
+            },
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[13.11.3, )"
             }
           },
           "imports": [

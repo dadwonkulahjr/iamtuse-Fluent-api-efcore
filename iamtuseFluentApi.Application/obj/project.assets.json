@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "iamtuseFluentApi.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/iamtuseFluentApi.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/iamtuseFluentApi.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "iamtuseFluentApi.Domain/1.0.0": {
+      "type": "project",
+      "path": "../iamtuseFluentApi.Domain/iamtuseFluentApi.Domain.csproj",
+      "msbuildProject": "../iamtuseFluentApi.Domain/iamtuseFluentApi.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "iamtuseFluentApi.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Domain\\iamtuseFluentApi.Domain.csproj": {
+              "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\iamtuseFluentApi\\iamtuseFluentApi.Domain\\iamtuseFluentApi.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -56,6 +79,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
