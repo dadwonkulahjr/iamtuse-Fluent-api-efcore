@@ -29,7 +29,6 @@ namespace iamtuseFluentApi.Infrastructure.Services.IRepository.Repository
             if (find != null)
             {
                 find.Name = genderToUpdate.Name;
-                find.GenderId = genderToUpdate.GenderId;
                 await _applicationDbContext.SaveChangesAsync();
             }
         }
